@@ -1,0 +1,364 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+    color: white;
+    height: 100vh;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+
+.logo img {
+    height: 40px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.menu li a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    margin-left: 20px; 
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 0;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+
+.dropdown-menu.active {
+    display: block;
+}
+
+
+.container {
+    max-width: 150%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('6.gif'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.left-content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    margin-top: 40px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.right-content {
+    max-width: 40%;
+}
+
+.right-content p {
+    color: #000000;
+}
+
+
+@media (max-width: 768px) {
+    .menu.active {
+        flex-direction: column;
+    }
+}
+ 
+.left-content h1, .left-content p, .right-content p {
+    color: rgb(204, 204, 204);
+}
+
+
+.social-icons a {
+    font-size: 24px;
+    color: rgb(255, 255, 255); 
+    margin-right: 20px;
+    text-decoration: none;
+}
+ 
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    padding-top: 300;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+header p {
+    padding-top: 30px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Main content layout */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.info-block {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.info-block:hover {
+    transform: translateY(-10px);
+}
+
+.info-block i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff4081;
+}
+
+.info-block h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;  /* Smaller width */
+    max-width: 400px; /* Ensure max width for small screens */
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;  /* Smaller title */
+    margin-bottom: 15px;
+    color: #000000;
+
+}
+
+.modal-content p {
+    font-size: 1rem;  /* Smaller text */
+    color: #000000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.2rem;  /* Smaller close button */
+    cursor: pointer;
+}
+.close-btn h2 { 
+color: #000000;
+
+}
+@media (max-width: 1500px) {
+    .modal-content {
+        width: 35%;  /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 1000px) {
+    .modal-content {
+        width: 50%;  /* Adjust width for smaller screens */
+    }
+}
+
+
+    /* Modal styles */
+.modal {
+    display: none;  /* Алғашқыда модальді терезе көрінбейді */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Жартылай қараңғы фон */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;  /* Кең экран үшін */
+    max-width: 400px;  /* Ең үлкен кеңдігі */
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1500px) {
+    .modal-content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+.x{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #000000;
+    position: absolute;
+    top: 45px;
+    right: -50px;
+    padding: 5px 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -100px;
+    
+ }
