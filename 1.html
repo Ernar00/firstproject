@@ -49,12 +49,30 @@
         </div>
     </section>
 
-    <!-- Модальді терезе (Modal) -->
+    
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2>Мы живем для того, чтобы воплощать в жизнь великие идеи</h2>
-            <p>Из-за этого я испытываю острую боль в порицании, и в сладострастии чувствую, что страдаю от этого, но избегаю этого.</p>
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>Регистрация</h2>
+                <form action="register.php" method="POST" class="registration-form">
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" required><br>
+                    
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required><br>
+                    
+                    <label for="confirm_password">Подтвердите пароль:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required><br>
+                    
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+               
+            </div>
             
             <a class="x" href="" onclick="modalClose()">X</a> 
         </div>
@@ -88,17 +106,17 @@
     <script src="3.js"></script>
 
     <script>
-        // Модальді терезені ашу функциясы
+        
         function openModal() {
             document.getElementById("myModal").style.display = "flex";
         }
 
-        // Модальді терезені жабу функциясы
+       
         function closeModal() {
             document.getElementById("myModal").style.display = "none";
         }
 
-        // Терезенің сыртынан басқанда модальді жабу
+        
         window.onclick = function(event) {
             const modal = document.getElementById("myModal");
             if (event.target === modal) {
