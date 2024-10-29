@@ -164,7 +164,7 @@ p {
     text-decoration: none;
 }
  
-/* Basic reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -177,7 +177,7 @@ body {
     padding: 20px;
 }
 
-/* Header styling */
+
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -197,7 +197,7 @@ header p {
     color: #555;
 }
 
-/* Main content layout */
+
 .content-container {
     display: flex;
     justify-content: space-between;
@@ -246,7 +246,7 @@ header p {
     color: #333;
 }
 
-/* Modal styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -264,28 +264,57 @@ header p {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    width: 30%;  /* Smaller width */
-    max-width: 400px; /* Ensure max width for small screens */
+    width: 30%;  
+    max-width: 400px; 
     text-align: center;
 }
 
-.modal-content h2 {
-    font-size: 1.5rem;  /* Smaller title */
-    margin-bottom: 15px;
-    color: #000000;
-
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.modal-content p {
-    font-size: 1rem;  /* Smaller text */
-    color: #000000;
+.registration-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-left: 115px ;
 }
+
+.registration-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200%;
+    margin-left: 20PX;
+ 
+}
+
+.registration-form button {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 140%; 
+    max-width: 200px; 
+    text-align: center;
+    margin-left: 45%;
+}
+
+.registration-form button:hover {
+    background-color: #e53e6b;
+}
+
 
 .close-btn {
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 1.2rem;  /* Smaller close button */
+    font-size: 1.2rem; 
     cursor: pointer;
 }
 .close-btn h2 { 
@@ -293,28 +322,31 @@ color: #000000;
 
 }
 @media (max-width: 1500px) {
+    .registration-form input{
+        weight: 50%;
+    }
     .modal-content {
-        width: 35%;  /* Adjust width for medium screens */
+        width: 35%;  
     }
 }
 
 @media (max-width: 1000px) {
     .modal-content {
-        width: 50%;  /* Adjust width for smaller screens */
+        width: 50%;  
     }
 }
 
 
-    /* Modal styles */
+  
 .modal {
-    display: none;  /* Алғашқыда модальді терезе көрінбейді */
+    display: none; 
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);  /* Жартылай қараңғы фон */
+    background-color: rgba(0, 0, 0, 0.7);  
     justify-content: center;
     align-items: center;
 }
@@ -323,8 +355,8 @@ color: #000000;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    width: 50%;  /* Кең экран үшін */
-    max-width: 400px;  /* Ең үлкен кеңдігі */
+    width: 50%; 
+    max-width: 400px; 
     text-align: center;
     position: relative;
 }
@@ -337,18 +369,8 @@ color: #000000;
     cursor: pointer;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1500px) {
-    .modal-content {
-        width: 60%;
-    }
-}
 
-@media (max-width: 1000px) {
-    .modal-content {
-        width: 80%;
-    }
-}
+
 .x{
     text-decoration: none;
     font-weight: bolder;

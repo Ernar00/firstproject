@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="2.css">
 </head>
 <body>
-    
     <header class="header">
         <div class="logo">
             <img src="logo.jpg" alt="Yokaso">
@@ -51,29 +50,7 @@
     </section>
 
     
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <h2>Регистрация</h2>
-                <form action="register.php" method="POST" class="registration-form">
-                    <label for="username">Имя пользователя:</label>
-                    <input type="text" id="username" name="username" required><br>
-                    
-                    <label for="email">Электронная почта:</label>
-                    <input type="email" id="email" name="email" required><br>
-                    
-                    <label for="password">Пароль:</label>
-                    <input type="password" id="password" name="password" required><br>
-                    
-                    <label for="confirm_password">Подтвердите пароль:</label>
-                    <input type="password" id="confirm_password" name="confirm_password" required><br>
-                    
-                    <button type="submit">Зарегистрироваться</button>
-                </form>
-               
-            </div>
+    
             
             <a class="x" href="" onclick="modalClose()">X</a> 
         </div>
@@ -103,6 +80,35 @@
             </div>
         </div>
     </main>
+    <form action="register.php" method="POST" class="registration-form">
+    <label for="username">Пайдаланушының аты:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="email">Электрондық пошта:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password">Құпиясөз:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="confirm_password">Құпиясөзді растау:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+    <button type="submit">Тіркелу</button>
+</form>
+
+<div class="modal-content">
+        <h2>Login</h2>
+        <form action="login.php" method="POST" class="registration-form">
+            <label for="username">Пайдаланушының аты:</label>
+            <input type="text" id="username" name="username" required><br>
+            
+            <label for="password">Құпиясөз:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Кіру</button>
+        </form>
+    </div>
+
 
     <script src="3.js"></script>
 
